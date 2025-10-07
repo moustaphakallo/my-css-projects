@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      body {
+        background-color: rgb(165, 230, 208);
+        border-radius: 25px;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        background-color: blue;
+        color: white;
+        box-shadow: 2px 2px 20px 2px #000;
+      }
+      .nav-list {
+        display: flex;
+        gap: 30px;
+      }
+      .nav-list li {
+        list-style-type: none;
+      }
+      .nav-btn button {
+        padding: 8px 32px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(43, 90, 90);
+        color: white;
+      }
+      @media (max-width: 542px) {
+        .nav-list {
+          display: none;
+          display: block;
+          background-color: black ;
+          color: white;
+        }
+        .navbar {
+          padding: 0 20px;
+        }
+      }
+      .LOGO {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        background-color: blue;
+        color: white;
+        box-shadow: 2px 2px 20px 2px #000;
+        margin-bottom: 20px;
+      }
+      .nav-list1 {
+        display: flex;
+        gap: 30px;
+      }
+      .nav-list1 li {
+        list-style-type: none;
+      }
+      .nav-btn1 button {
+        padding: 8px 32px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(43, 90, 90);
+        color: white;
+      }
+      @media (max-width: 476px) {
+        .nav-list1 {
+          display: none;
+        }
+        .navbar1 {
+          padding: 0 20px;
+        }
+      }
+      .image {
+        height: 17px;
+        width: 17px;
+        padding-left: 30px;
+        text-align: center;
+      }
+      .type {
+        background-color: white;
+        gap: 0px;
+        border: none;
+        text-align: center;
+      }
+      .type input {
+        border: none;
+
+        text-align: center;
+      }
+      .LOGO1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        background-color: blue;
+        color: white;
+        box-shadow: 2px 2px 20px 2px #000;
+        margin-bottom: 40px;
+      }
+      .Services {
+        margin-bottom: 20px;
+      }
+      .About{
+        background-color: #000;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Services">
+      <div class="LOGO">
+        <ul class="nav-list1">
+          <li>homm</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>About</li>
+        </ul>
+        <div class="type">
+          <img class="image" src="vvv.png" alt="" />
+          <input type="text" placeholder="Search here...." />
+        </div>
+        <button>
+          <h1>codinglabl</h1>
+        </button>
+      </div>
+      <div class="LOGO1">
+        <div class="type">
+          <button>
+            <h1>codinglabl</h1>
+          </button>
+          <img class="image" src="vvv.png" alt="" />
+          <input type="text" placeholder="Search here...." />
+        </div>
+      </div>
+      <div class="About">
+        <p>homm</p>
+        <p>Services</p>
+        <p>Projects</p>
+        <p>About</p>  
+      </div>
+    </div>
+  </body>
+</html>

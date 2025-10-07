@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-real {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 31px;
+        border-radius: 3px solid color red;
+      }
+      .image {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 816px) {
+        .image {
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .grid-real {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 400px) {
+        .grid-real {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 300px) {
+        .grid-real {
+          grid-template-columns: 1fr;
+        }
+        .grid-real .image {
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+          padding-left: 100%;
+        }
+      }
+      .dolor {
+        /* justify-content: center;
+        text-align: center; */
+
+        gap: 10px;
+      }
+      .dolor img {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+      }
+      .dolor p {
+        padding-bottom: 100px;
+        height: 100px;
+      }
+      .amet {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      @media (max-width: 400px) {
+        .grid-rea.diva {
+          display: flex;
+          text-decoration: overline;
+          justify-content: center;
+          overflow: hidden;
+        }
+        .grid-real .diva {
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+          padding-left: 100%;
+        }
+      }
+      .navbar {
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+       
+      }
+      .logo {
+        color: black;
+      }
+      .link a {
+        color: black;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 20px;
+      }
+      .button button {
+        padding: 8px 16px;
+        border-radius: 25px;
+        
+      }
+      .Lorem {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .vel {
+        display: flex;
+      }
+      .nam {
+        display: flex;
+      }
+      .amet {
+        display: flex;
+      }
+      .amet1 {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>LOGOBAKERY</h1>
+      </div>
+      <div class="link">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </div>
+      <div class="button">
+        <button>Contact</button>
+      </div>
+    </div>
+    <div>
+      <img src="d3.jpg" alt="" />
+    </div>
+    <div class="grid-real">
+      <div>
+        <div class="image"><img src="images/F1.jpg" alt="" /></div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <div class="image"><img src="images/F2.jpg" alt="" /></div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <div class="image">
+          <img src="images/F3.jpg" alt="" />
+        </div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <div class="image">
+          <img src="images/F4.jpg" alt="" />
+        </div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <div class="image"><img src="css1/F8.jpg" alt="" /></div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <div class="image"><img src="css1/F7.jpg" alt="" /></div>
+        <p>29.JUN.2021</p>
+        <h4>Richard Norton photorealistic rendering as real photos</h4>
+      </div>
+      <div>
+        <button><i class="fa fa-search"></i> search</button>
+        <div class="photos">
+          <div class="image"><img src="images/F2.jpg" alt="" /></div>
+        </div>
+      </div>
+      <div class="dolor">
+        <div class="amet">
+          <img src="css1/F9.jpg" alt="" />
+
+          <p>
+            Lorem ipsum dolor sit amet <br />consectetur pudiandae <br />in?
+            Eligendi reiciendis <br />vero odio dolorem. Dolore, <br />
+            maxime aliquid eos.
+          </p>
+          <div>
+            <img src="css1/f16.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="nam">
+          <img src="css1/F4.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet<br />
+            consectetur adipisicing elit. Excepturi id in adipisci nam,
+            <br />dignissimos hic a eius minus.<br />
+            Vel nisi error earum, consectetur incidunt ipsam <br />similique
+            labore nobis iure asperiores.
+          </p>
+        </div>
+        <div class="amet">
+          <img src="css1/F7.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor<br />
+            sit amet consectetur <br />adipisicing elit. Necessitatibus,<br />
+            aut alias sapiente sit unde<br />
+            molestiae sequi illum id mollitia odio <br />repellendus obcaecati
+            iure ab fuga <br />amet excepturi<br />
+            nesciunt culpa dolor!
+          </p>
+        </div>
+        <div class="amet1">
+          <img src="css1/F6.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
+            Necessitatibus,<br />
+            aut alias sapiente sit unde<br />
+            molestiae sequi illum id mollitia odio <br />repellendus obcaecati
+            iure ab fuga amet<br />
+            excepturi nesciunt culpa dolor!
+          </p>
+        </div>
+
+        <div class="navbar">
+          <div class="logo">
+            <h1>LOGOBAKERY</h1>
+          </div>
+          <div class="link">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+          </div>
+          <div class="button">
+            <button>Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

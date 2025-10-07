@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      .banner {
+        background: linear-gradient(to right, #0a0430, #003f46);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      .banner h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .banner h1 .highlight {
+        color: orange;
+      }
+
+      .banner h1 .affinet {
+        color: #4da6ff;
+      }
+
+      .banner p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+
+      .underline {
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(to right, orange, yellow);
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+      .Works {
+        justify-items: center;
+        margin-bottom: 20px;
+        background-color: rgba(35, 29, 61, 0.568);
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+        padding-left: 150px;
+        gap: 20px;
+        padding-left: 20px;
+      }
+      .Welcome {
+        align-items: center;
+        justify-content: center;
+      }
+      .campaign {
+        color: white;
+        background-color: rgb(23, 23, 41);
+        text-align: center;
+      }
+      .Have img {
+        height: 700px;
+      }
+
+      .detail {
+        padding-top: 20px;
+        margin-bottom: 15px;
+        background: linear-gradient(
+          90deg,
+          rgb(161, 157, 154),
+          rgb(253, 145, 73),
+          rgb(75, 42, 11),
+          #ddd
+        );
+        padding-right: 150px;
+        padding-left: 100px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 20px;
+      }
+      .colour {
+        padding-bottom: 17px;
+        background-color: white;
+        margin-bottom: 15px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .colour img {
+        height: 300px;
+      }
+      .tunning {
+        padding-bottom: 17px;
+        margin-bottom: 15px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .tunning img {
+        height: 300px;
+      }
+      .leather {
+        /* padding-bottom: 17px; */
+        margin-bottom: 15px;
+        gap: 20px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .leather img {
+        height: 300px;
+      }
+      .peplum {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .peplum img {
+        height: 300px;
+      }
+      .shoulder {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .shoulder img {
+        height: 300px;
+      }
+      .while {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .while img {
+        height: 300px;
+      }
+      .Email {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .Email img {
+        height: 300px;
+      }
+      .Physical {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .Physical img {
+        height: 300px;
+      }
+      .Landing {
+        margin-bottom: 15px;
+        padding-bottom: 17px;
+        background-color: white;
+        display: flex;
+        text-align: center;
+      }
+      .Landing p {
+        height: 300px;
+        width: 300p;
+      }
+      .Landing img {
+        height: 300px;
+      }
+      .can {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .type {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .any {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .need {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .pay {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .from {
+        margin-bottom: 15px;
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .place {
+        margin-bottom: 15px;
+
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .know {
+        margin-bottom: 15px;
+
+        background-color: rgb(53, 24, 24);
+        color: #ddd;
+        display: flex;
+
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .Now {
+        height: 0;
+        color: #318a53;
+        background-color: aqua;
+        padding-bottom: 200px;
+      }
+      .input {
+        color: #ddd;
+        display: flex;
+        gap: 20px;
+        padding-left: 250px;
+      }
+      .Bonus {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        background-color: #ddd;
+      }
+      .Terms {
+        color: black;
+        background-color: #ddd;
+      }
+      .Privacy {
+        gap: 17px;
+        display: flex;
+        background-color: #ddd;
+        text-align: center;
+        justify-content: center;
+      }
+      .Privacy img {
+        height: 150px;
+      }
+      a.up {
+        border: 11px solid color white;
+        background-color: rgba(44, 79, 95, 0.445);
+      }
+      .FREQUENTLY img {
+        height: 50px;
+      }
+      .FREQUENTLY {
+        color: darkgreen;
+      }
+      .Favour img {
+        height: 200px;
+      }
+      .Favour {
+        border-radius: 10px;
+        padding-right: 20px;
+        position: relative;
+        gap: 30px;
+        padding-top: 30px;
+        padding-left: 40px;
+      }
+      .card-btn {
+        border: none;
+        padding: 8px 32px;
+        color: #ddd;
+        border-radius: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10;
+        background-color: darkgreen;
+      }
+      .Favour .the {
+        color: #322988;
+      }
+      .Favour p {
+        color: rgb(172, 169, 19);
+      }
+      .Coach {
+        padding-left: 100px;
+        display: flex;
+        text-align: center;
+        border-radius: 12px color black;
+        margin: auto;
+        gap: 12px;
+      }
+      .Ready p {
+        display: flex;
+        border-radius: 12px;
+        background-color: rgb(112, 75, 20);
+        text-align: center;
+        width: 100px;
+        padding-left: 100px;
+        margin-left: 100px;
+        padding-right: 100px;
+        color: black;
+      }
+      .Ready {
+        margin-bottom: 20px;
+        display: block;
+        justify-items: center;
+        text-align: center;
+        background: linear-gradient(
+          90deg,
+          rgb(161, 157, 154),
+          rgb(253, 145, 73),
+          rgb(75, 42, 11),
+          #ddd
+        );
+        color: #ddd;
+      }
+      .skills {
+        color: rgb(217, 255, 0);
+      }
+      .life {
+        color: rgb(40, 100, 40);
+      }
+      .of {
+        color: rgb(71, 167, 71);
+      }
+      .Value {
+        color: rgb(71, 138, 71);
+      }
+      .Welcome a{
+        background: #36da74;
+        border-radius: 25px;
+        color: #ddd;
+        width: 25px;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="campaign">
+      <div class="Welcome">
+        <span class="of">Tired of Financial Struggles?</span>
+        <h1>Welcome to Affinetsales</h1>
+        <h4>
+          Your Partner in Mastering Profitable Online Businesses and Building a
+          Life of Freedom.
+        </h4>
+        <span class="Value"> Real • Genuine Results</span>
+        <br>
+        <a href="./monsecond.html" class="up">sign up</a>
+        <a href="grid1.html"></a>
+      </div>
+      <div class="Works">
+        <input type="checkbox" />
+        <p>Zero Computer Skills Needed</p>
+        <input type="checkbox" />
+        <p>Works For Every One Ready To Learn</p>
+        <input type="checkbox" />
+        <p>You’ll Never Have To Beg For Money Again</p>
+      </div>
+      <div>
+        <div class="Have">
+          <img
+            src="https://www.shutterstock.com/image-vector/ideal-video-player-content-creators-260nw-2649675503.jpg"
+            alt=""
+          />
+        </div>
+        <div class="banner">
+          <h1>
+            People are achieving
+            <span class="highlight">big success</span> every day <br />
+            with our secret guide on <span class="affinet">AFFINETSALES</span>
+          </h1>
+          <p>Discover it Yourself...</p>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Coach">
+      <div class="Favour">
+        <img src="u17.webp" alt="" />
+        <h3>Coach Favour</h3>
+        <p>★★★★★</p>
+        <h6>
+          I had the privilege of meeting <br />Brains TV three years ago, and
+          <br />it was a turning point in my life. Through his <br />
+          guidance, I acquired
+          <span class="the">I had the privilege of meeting </span>valuable
+          skills <br />
+          and discovered affiliate marketing. <br />
+          His mentorship has been instrumental in my success.
+        </h6>
+        <button class="card-btn">Kallo</button>
+      </div>
+      <div class="Favour">
+        <img src="r12.jpg" alt="" />
+        <h3>Coach Favour</h3>
+        <p>★★★★★</p>
+        <h6>
+          <span class="the">I had the privilege of meeting </span> <br />Brains
+          TV three years ago, and <br />it was a turning point in my life.
+          Through his <br />
+          guidance, I acquired valuable skills <br />
+          and discovered affiliate marketing. <br />
+          His mentorship has been instrumental in my success.
+        </h6>
+        <button class="card-btn">Services</button>
+      </div>
+      <div class="Favour">
+        <img src="t16.jpg" alt="" />
+        <h3>Coach Favour</h3>
+        <p>★★★★★</p>
+        <h6>
+          I had the privilege of meeting <br />Brains TV three years ago, and
+          <br />it was a turning point in my life. Through his <br />
+          guidance, <span class="skills">I acquired valuable skills</span>
+          <br />
+          and discovered affiliate marketing. <br />
+          His mentorship has been instrumental in my success.
+        </h6>
+        <button class="card-btn">Solutions</button>
+      </div>
+      <div class="Favour">
+        <img src="k188.jpg" alt="" />
+        <h3>Coach Favour</h3>
+        <p>★★★★★</p>
+        <h6>
+          I had the privilege of meeting <br />Brains TV three years ago, and
+          <br />it was a turning point in my life. Through his <br />
+          guidance, <span class="life">I acquired valuable skills </span><br />
+          and discovered affiliate marketing. <br />
+          His mentorship has been instrumental in my success.
+        </h6>
+        <button class="card-btn">oposition</button>
+      </div>
+    </div>
+    <div>
+      <div class="Ready">
+        <h1>Ready to join these success stories?</h1>
+        <p>Get Started Today</p>
+      </div>
+    </div>
+
+    <section class="detail">
+      <div class="Topics">
+        <div class="colour">
+          <img src="https://affinatesale.vercel.app/challeng.png" alt="" />
+          <div>
+            <h1>500K Money Challenge in 30 Days</h1>
+            <p>
+              Ready to make your first 500K? This comprehensive course dives
+              deep into the world of affiliate marketing, revealing the
+              strategies and secrets that can help you consistently earn up to
+              500K every month. Whether you're a beginner or have some
+              experience, this challenge equips you with actionable steps and
+              insider tips to transform your affiliate marketing journey on
+              Affinetsales.
+            </p>
+          </div>
+        </div>
+        <div class="tunning">
+          <div>
+            <h1>How to Start a Profitable WhatsApp TV Business</h1>
+            <p>
+              Ever wondered how to build a large, engaged audience on WhatsApp?
+              This course unveils the powerful secrets behind growing your
+              WhatsApp TV from scratch to over 5,000 active viewers. Learn the
+              exact strategies that the pros won't tell you, and discover how to
+              monetize your audience for maximum profit. This method is tried,
+              tested, and proven to work!
+            </p>
+          </div>
+          <img src="https://affinatesale.vercel.app/whasapp_logo.png" alt="" />
+        </div>
+
+        <div class="leather">
+          <img src="https://affinatesale.vercel.app/instagram.png" alt="" />
+          <div>
+            <h1>Instagram Ads (Crazy Secret Exposed)</h1>
+            <p>
+              Ready to make your first 500K? This comprehensive course dives
+              deep into the world of affiliate marketing, revealing the
+              strategies and secrets that can help you consistently earn up to
+              500K every month. Whether you're a beginner or have some
+              experience, this challenge equips you with actionable steps and
+              insider tips to transform your affiliate marketing journey on
+              Affinetsales.
+            </p>
+          </div>
+        </div>
+        <div class="peplum">
+          <div>
+            <p>Facebook Ads Workshop</p>
+            <p>
+              Facebook remains one of the most powerful advertising platforms in
+              the world. This workshop takes you through every step of creating,
+              optimizing, and scaling profitable Facebook ad campaigns. You'll
+              learn how to reach your target audience, craft irresistible ads,
+              and turn clicks into conversions. Whether you're new to Facebook
+              ads or looking to improve your results, this course has you
+              covered.
+            </p>
+          </div>
+          <img src="https://affinatesale.vercel.app/workflow.png" alt="" />
+        </div>
+        <div class="shoulder">
+          <img src="https://affinatesale.vercel.app/robo.png" alt="" />
+          <div>
+            <p>WhatsApp Automation</p>
+            <p>
+              Automation is key to scaling your business, and this course shows
+              you how to leverage WhatsApp automation to streamline your
+              operations. Learn how to set up automated responses, schedule
+              messages, and manage your contacts efficiently. This course is
+              perfect for anyone looking to save time and increase productivity
+              while still providing excellent customer service
+            </p>
+          </div>
+        </div>
+        <div class="while">
+          <div>
+            <h1>Email Marketing</h1>
+            <p>
+              Email marketing is still one of the most effective ways to reach
+              your audience. This course teaches you how to build a profitable
+              email list, craft compelling emails, and create automated
+              campaigns that convert. Whether you're promoting products,
+              services, or content, this course will help you master the art of
+              email marketing.
+            </p>
+          </div>
+
+          <img src="https://affinatesale.vercel.app/letter.png" alt="" />
+        </div>
+        <div class="Email">
+          <img src="https://affinatesale.vercel.app/organic.png" alt="" />
+          <div>
+            <h1>Organic Lead Generation for Physical and Online Business</h1>
+            <p>
+              Email marketing is still one of the most effective ways to reach
+              your audience. This course teaches you how to build a profitable
+              email list, craft compelling emails, and create automated
+              campaigns that convert. Whether you're promoting products,
+            </p>
+          </div>
+        </div>
+        <div class="Physical">
+          <div>
+            <h1>How to Create a Professional Landing Page</h1>
+            <p>
+              A well-designed landing page can make or break your marketing
+              campaign. This course shows you how to create landing pages that
+              capture attention, build trust, and drive conversions. Learn the
+              key elements of high-converting landing pages and how to test and
+              optimize them for maximum results.
+            </p>
+          </div>
+          <img src="https://affinatesale.vercel.app/landing_page.png" alt="" />
+        </div>
+        <div class="Landing">
+          <div>
+            <h1>How to Create a Professional Landing Page</h1>
+            <p>
+              A well-designed landing page can make or break your marketing
+              campaign. This course shows you how to create landing pages that
+              capture attention, build trust, and drive conversions. Learn the
+              key elements of high-converting landing pages and how to test and
+              optimize them for maximum results.
+            </p>
+          </div>
+          <img src="https://affinatesale.vercel.app/workflow.png" alt="" />
+        </div>
+        <div>
+          <div class="FREQUENTLY">
+            <h1>FREQUENTLY ASKED <br />QUESTIONS</h1>
+            <img
+              src="https://icones.pro/wp-content/uploads/2021/04/icone-trait-vert.png"
+              alt=""
+            />
+          </div>
+          <div class="can">
+            <h1>How soon can I start earning money?</h1>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <div class="type">
+              <h1>
+                Why is the price so affordable if the program offers so much?
+              </h1>
+             <a href=" input type="checkbox> <input type="checkbox" /></a>
+            </div>
+          </div>
+          <div>
+            <div class="any">
+              <h1>Is there any guarantee of success?</h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="need">
+              <h1>What if I need help during the training?</h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="know">
+              <h1>How do I know this is legitimate?</h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="place">
+              <h1>Where will the training take place?</h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="from">
+              <h1>What makes this course different from others?</h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="pay">
+              <h1>
+                After the registration fee, will I need to pay any additional
+                fees for account upgrades or before withdrawals?
+              </h1>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="up">
+            <div>
+              <h1>Are you ready to get started now?</h1>
+              <p>
+                Join hundreds of successful students and start your journey
+                today!
+              </p>
+            </div>
+
+            <div class="Now">
+              <h3>sign up Now</h3>
+            </div>
+            <div class="input">
+              <input type="checkbox" />
+              <p>No Hidden Fees</p>
+              <input type="checkbox" />
+              <p>Instant Access</p>
+              <input type="checkbox" />
+              <p>24/7 Support</p>
+            </div>
+          </div>
+          <div class="Bonus">
+            <div>
+              <h1>Services</h1>
+              <p>Dashboard</p>
+              <p>Classroom</p>
+              <p>Bonus</p>
+              <p>Live Sessions</p>
+              <p>Top Earners</p>
+            </div>
+            <div>
+              <h1>Solutions</h1>
+              <p>Join our Community</p>
+              <p>Customer Care</p>
+              <p>Account Settings</p>
+            </div>
+            <div>
+              <h1>Ressources</h1>
+              <p>Pricing Blog</p>
+              <p>Classroom</p>
+              <p>Help center</p>
+            </div>
+            <div>
+              <h1>Delovelopers</h1>
+              <p>Status</p>
+              <p>Documentation</p>
+              <p>API</p>
+            </div>
+            <div>
+              <h1>Company</h1>
+              <p>About Us</p>
+              <p>Facebook</p>
+              <p>LinkedIn</p>
+              <p>Instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="Privacy">
+          <div class="Terms">
+            © 2023 Affinetsales. Terms Privacy Security Cookies
+          </div>
+          <div>
+            <img
+              src="https://affinatesale.vercel.app/message_logo.png"
+              alt=""
+            />
+            <img
+              src="https://monamakecrochet.com/cdn/shop/files/iconsss.jpg?v=1718224692&width=750"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
